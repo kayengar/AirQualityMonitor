@@ -1,0 +1,19 @@
+# pyenv
+.python-version
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+
+# Environments
+.venv
+.env
+
+.idea/
+
+# Cache
+*/__pycache__
+*/*/__pycache__
+
+# File with secrets
+aqi_monitor/twilio_helper.py

@@ -1,0 +1,25 @@
+
+[tool.poetry]
+name = "airqualitymonitor"
+version = "0.1.0"
+description = "This is a simple AQI monitor that sends notification when AQI gets worse"
+authors = ["Karthik Devanathan <kayengar@asu.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+selenium = "^3.141.0"
+secure-smtplib = "^0.1.1"
+webdriver-manager = "^3.4.1"
+bs4 = "^0.0.1"
+black = "^21.4b2"
+vulture = "^2.3"
+pytest = "^6.2.3"
+pylint = "^2.8.2"
+twilio = "^6.57.0"
+mypy = "^0.812"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
