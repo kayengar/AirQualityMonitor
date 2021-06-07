@@ -1,6 +1,6 @@
 # Air Quality Index Monitor
 
-This app prints, sends SMS and sends email if the AQI of cities in the west coast go beyond a certain 
+This app prints, sends SMS and sends email if the AQI of cities/states in the USA go beyond a certain 
 threshold.
 
 ## Prerequisites:
