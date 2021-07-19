@@ -8,7 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-# from twilio_helper import send_message
+from twilio_helper import send_message
 
 AQI_THRESHOLD = float(environ.get("AQI_THRESHOLD"))
 LIST_OF_STATES = environ.get("LIST_OF_STATES").split(",")
@@ -20,7 +20,10 @@ def initialize_headless_chrome():
     :return:
     """
     options = Options()
-    options.headless = True
+    options.add_argument("--headless")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
     options.add_argument("--window-size=1920,1200")
     return webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
@@ -135,6 +138,6 @@ if __name__ == "__main__":
     if list_of_cities:
         pretty_string = pretty_print_json(list_of_cities)
         print(pretty_string)
-        # send_message(pretty_string)
+        send_message(pretty_string)
         # This currently doesn't send emails
         # send_email(pretty_string)
