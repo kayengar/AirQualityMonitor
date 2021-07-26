@@ -53,5 +53,5 @@ make all
 
 ## Example screenshot of a message received from Twilio trial account
 
-! [Twilio_Example_SMS] (https://github.com/kayengar/AirQualityMonitor/blob/main/example/twilio_trail_sms.jpeg?raw=true)
+![Twilio_Example_SMS](example/twilio_trail_sms.jpeg)
 
