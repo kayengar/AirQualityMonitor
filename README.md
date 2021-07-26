@@ -50,4 +50,3 @@ make all
 ## Current bugs and TODOs:
 
 - Send email funcitonality not implemented
-- Need to containerize the entire project
